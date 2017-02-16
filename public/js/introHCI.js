@@ -36,10 +36,10 @@ function addProject(result) {
 	console.log(result['id']);
 	var idNum = result['id'];
 
-	var details = 
-		'<img src="' + result['image'] + '" class="img">' +
+	var details = '<div class="details">' +
+		'<img src="' + result['image'] + '" class="detailsImage">' +
 		'<p>' + result['summary'] + '</p>' 
-		'<p><small>' + result['date'] + '</small></p>' +
+		'<p><small>' + result['date'] + '</small></p></div'
 
 	$("#project" + idNum).append(details);
 
